@@ -23,9 +23,14 @@ mixin _$Point {
   double get x => throw _privateConstructorUsedError;
   double get y => throw _privateConstructorUsedError;
   double get pressure => throw _privateConstructorUsedError;
+  double get timestamp => throw _privateConstructorUsedError;
 
+  /// Serializes this Point to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Point
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PointCopyWith<Point> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -34,7 +39,7 @@ abstract class $PointCopyWith<$Res> {
   factory $PointCopyWith(Point value, $Res Function(Point) then) =
       _$PointCopyWithImpl<$Res, Point>;
   @useResult
-  $Res call({double x, double y, double pressure});
+  $Res call({double x, double y, double pressure, double timestamp});
 }
 
 /// @nodoc
@@ -47,12 +52,15 @@ class _$PointCopyWithImpl<$Res, $Val extends Point>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Point
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? x = null,
     Object? y = null,
     Object? pressure = null,
+    Object? timestamp = null,
   }) {
     return _then(_value.copyWith(
       x: null == x
@@ -67,6 +75,10 @@ class _$PointCopyWithImpl<$Res, $Val extends Point>
           ? _value.pressure
           : pressure // ignore: cast_nullable_to_non_nullable
               as double,
+      timestamp: null == timestamp
+          ? _value.timestamp
+          : timestamp // ignore: cast_nullable_to_non_nullable
+              as double,
     ) as $Val);
   }
 }
@@ -78,7 +90,7 @@ abstract class _$$PointImplCopyWith<$Res> implements $PointCopyWith<$Res> {
       __$$PointImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({double x, double y, double pressure});
+  $Res call({double x, double y, double pressure, double timestamp});
 }
 
 /// @nodoc
@@ -89,12 +101,15 @@ class __$$PointImplCopyWithImpl<$Res>
       _$PointImpl _value, $Res Function(_$PointImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Point
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? x = null,
     Object? y = null,
     Object? pressure = null,
+    Object? timestamp = null,
   }) {
     return _then(_$PointImpl(
       null == x
@@ -109,6 +124,10 @@ class __$$PointImplCopyWithImpl<$Res>
           ? _value.pressure
           : pressure // ignore: cast_nullable_to_non_nullable
               as double,
+      timestamp: null == timestamp
+          ? _value.timestamp
+          : timestamp // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
@@ -116,7 +135,9 @@ class __$$PointImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$PointImpl extends _Point {
-  const _$PointImpl(this.x, this.y, {this.pressure = 0.5}) : super._();
+  const _$PointImpl(this.x, this.y,
+      {this.pressure = 0.5, required this.timestamp})
+      : super._();
 
   factory _$PointImpl.fromJson(Map<String, dynamic> json) =>
       _$$PointImplFromJson(json);
@@ -128,10 +149,12 @@ class _$PointImpl extends _Point {
   @override
   @JsonKey()
   final double pressure;
+  @override
+  final double timestamp;
 
   @override
   String toString() {
-    return 'Point(x: $x, y: $y, pressure: $pressure)';
+    return 'Point(x: $x, y: $y, pressure: $pressure, timestamp: $timestamp)';
   }
 
   @override
@@ -142,14 +165,18 @@ class _$PointImpl extends _Point {
             (identical(other.x, x) || other.x == x) &&
             (identical(other.y, y) || other.y == y) &&
             (identical(other.pressure, pressure) ||
-                other.pressure == pressure));
+                other.pressure == pressure) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, x, y, pressure);
+  int get hashCode => Object.hash(runtimeType, x, y, pressure, timestamp);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Point
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PointImplCopyWith<_$PointImpl> get copyWith =>
@@ -165,7 +192,7 @@ class _$PointImpl extends _Point {
 
 abstract class _Point extends Point {
   const factory _Point(final double x, final double y,
-      {final double pressure}) = _$PointImpl;
+      {final double pressure, required final double timestamp}) = _$PointImpl;
   const _Point._() : super._();
 
   factory _Point.fromJson(Map<String, dynamic> json) = _$PointImpl.fromJson;
@@ -177,7 +204,12 @@ abstract class _Point extends Point {
   @override
   double get pressure;
   @override
-  @JsonKey(ignore: true)
+  double get timestamp;
+
+  /// Create a copy of Point
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PointImplCopyWith<_$PointImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
