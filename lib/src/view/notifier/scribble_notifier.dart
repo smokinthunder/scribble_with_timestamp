@@ -435,6 +435,7 @@ class ScribbleNotifier extends ScribbleNotifierBase
       event.localPosition.dx,
       event.localPosition.dy,
       pressure: pressureCurve.transform(p),
+      timestamp: DateTime.now().millisecondsSinceEpoch,
     );
   }
 
