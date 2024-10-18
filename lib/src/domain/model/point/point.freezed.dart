@@ -23,7 +23,7 @@ mixin _$Point {
   double get x => throw _privateConstructorUsedError;
   double get y => throw _privateConstructorUsedError;
   double get pressure => throw _privateConstructorUsedError;
-  double get timestamp => throw _privateConstructorUsedError;
+  int get timestamp => throw _privateConstructorUsedError;
 
   /// Serializes this Point to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -39,7 +39,7 @@ abstract class $PointCopyWith<$Res> {
   factory $PointCopyWith(Point value, $Res Function(Point) then) =
       _$PointCopyWithImpl<$Res, Point>;
   @useResult
-  $Res call({double x, double y, double pressure, double timestamp});
+  $Res call({double x, double y, double pressure, int timestamp});
 }
 
 /// @nodoc
@@ -78,7 +78,7 @@ class _$PointCopyWithImpl<$Res, $Val extends Point>
       timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
-              as double,
+              as int,
     ) as $Val);
   }
 }
@@ -90,7 +90,7 @@ abstract class _$$PointImplCopyWith<$Res> implements $PointCopyWith<$Res> {
       __$$PointImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({double x, double y, double pressure, double timestamp});
+  $Res call({double x, double y, double pressure, int timestamp});
 }
 
 /// @nodoc
@@ -127,7 +127,7 @@ class __$$PointImplCopyWithImpl<$Res>
       timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
-              as double,
+              as int,
     ));
   }
 }
@@ -150,7 +150,7 @@ class _$PointImpl extends _Point {
   @JsonKey()
   final double pressure;
   @override
-  final double timestamp;
+  final int timestamp;
 
   @override
   String toString() {
@@ -192,7 +192,7 @@ class _$PointImpl extends _Point {
 
 abstract class _Point extends Point {
   const factory _Point(final double x, final double y,
-      {final double pressure, required final double timestamp}) = _$PointImpl;
+      {final double pressure, required final int timestamp}) = _$PointImpl;
   const _Point._() : super._();
 
   factory _Point.fromJson(Map<String, dynamic> json) = _$PointImpl.fromJson;
@@ -204,7 +204,7 @@ abstract class _Point extends Point {
   @override
   double get pressure;
   @override
-  double get timestamp;
+  int get timestamp;
 
   /// Create a copy of Point
   /// with the given fields replaced by the non-null parameter values.

@@ -14,7 +14,7 @@ class Point with _$Point {
     double x,
     double y, {
     @Default(0.5) double pressure,
-    required double timestamp,
+    required int timestamp,
   }) = _Point;
   const Point._();
 
