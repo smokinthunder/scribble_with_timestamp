@@ -1,8 +1,8 @@
-name: scribble
+name: scribble_with_timestamp
 description: Scribble is a lightweight library for freehand drawing in Flutter
-  supporting pressure, variable line width and more!
+  supporting pressure, variable line width and more along with these features I have added timestamp to each point drawn on the canvas so more functionality could be derived from it like writing speed.
 version: 0.10.0+1
-repository: https://github.com/timcreatedit/scribble
+repository: https://github.com/smokinthunder/scribble
 issue_tracker: https://github.com/timcreatedit/scribble/issues
 
 environment:
