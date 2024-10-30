@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:perfect_freehand/perfect_freehand.dart' as pf;
-import 'package:scribble/src/domain/model/sketch/sketch.dart';
+import 'package:scribble_with_timestamp/src/domain/model/sketch/sketch.dart';
 
 /// A mixin for generating a [Path] from a [SketchLine].
 ///

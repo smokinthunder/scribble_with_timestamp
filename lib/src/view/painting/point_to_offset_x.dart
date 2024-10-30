@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:scribble/src/domain/model/sketch/sketch.dart';
+import 'package:scribble_with_timestamp/src/domain/model/sketch/sketch.dart';
 
 /// Extension on [Point] to convert it to an [Offset].
 extension PointToOffsetX on Point {

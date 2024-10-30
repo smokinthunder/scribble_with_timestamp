@@ -1,6 +1,6 @@
 import 'dart:math' as math;
-import 'package:scribble/scribble.dart';
-import 'package:scribble/src/domain/iterable_removed_x.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/src/domain/iterable_removed_x.dart';
 import 'package:simpli/simpli.dart';
 
 /// {@template sketch_simplifier}

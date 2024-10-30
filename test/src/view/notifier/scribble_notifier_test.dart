@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:scribble/scribble.dart';
-import 'package:scribble/src/view/simplification/sketch_simplifier.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/src/view/simplification/sketch_simplifier.dart';
 
 class _MockSimplifier extends Mock implements SketchSimplifier {}
 

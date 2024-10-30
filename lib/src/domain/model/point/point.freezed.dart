@@ -135,8 +135,7 @@ class __$$PointImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$PointImpl extends _Point {
-  const _$PointImpl(this.x, this.y,
-      {this.pressure = 0.5, required this.timestamp})
+  const _$PointImpl(this.x, this.y, {this.pressure = 0.5, this.timestamp = 0})
       : super._();
 
   factory _$PointImpl.fromJson(Map<String, dynamic> json) =>
@@ -150,6 +149,7 @@ class _$PointImpl extends _Point {
   @JsonKey()
   final double pressure;
   @override
+  @JsonKey()
   final int timestamp;
 
   @override
@@ -192,7 +192,7 @@ class _$PointImpl extends _Point {
 
 abstract class _Point extends Point {
   const factory _Point(final double x, final double y,
-      {final double pressure, required final int timestamp}) = _$PointImpl;
+      {final double pressure, final int timestamp}) = _$PointImpl;
   const _Point._() : super._();
 
   factory _Point.fromJson(Map<String, dynamic> json) = _$PointImpl.fromJson;

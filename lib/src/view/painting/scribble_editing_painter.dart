@@ -1,7 +1,7 @@
 import 'package:flutter/rendering.dart';
-import 'package:scribble/scribble.dart';
-import 'package:scribble/src/view/painting/point_to_offset_x.dart';
-import 'package:scribble/src/view/painting/sketch_line_path_mixin.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/src/view/painting/point_to_offset_x.dart';
+import 'package:scribble_with_timestamp/src/view/painting/sketch_line_path_mixin.dart';
 
 /// {@template scribble_editing_painter}
 /// A painter for drawing the currently active line of a scribble sketch, as

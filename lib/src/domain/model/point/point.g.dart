@@ -10,7 +10,7 @@ _$PointImpl _$$PointImplFromJson(Map<String, dynamic> json) => _$PointImpl(
       (json['x'] as num).toDouble(),
       (json['y'] as num).toDouble(),
       pressure: (json['pressure'] as num?)?.toDouble() ?? 0.5,
-      timestamp: (json['timestamp'] as num).toInt(),
+      timestamp: (json['timestamp'] as num?)?.toInt() ?? 0,
     );
 
 Map<String, dynamic> _$$PointImplToJson(_$PointImpl instance) =>

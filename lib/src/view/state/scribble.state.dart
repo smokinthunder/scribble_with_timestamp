@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:scribble/src/domain/model/sketch/sketch.dart';
+import 'package:scribble_with_timestamp/src/domain/model/sketch/sketch.dart';
 
 part 'scribble.state.freezed.dart';
 

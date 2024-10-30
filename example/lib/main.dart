@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:scribble/scribble.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
 import 'package:value_notifier_tools/value_notifier_tools.dart';
 
 void main() {

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:scribble/src/domain/model/point/point.dart';
+import 'package:scribble_with_timestamp/src/domain/model/point/point.dart';
 
 part 'sketch_line.freezed.dart';
 part 'sketch_line.g.dart';

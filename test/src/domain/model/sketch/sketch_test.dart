@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scribble/scribble.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
 
 void main() {
   group(".fromJson", () {

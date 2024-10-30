@@ -1,6 +1,6 @@
 import 'package:flutter/rendering.dart';
-import 'package:scribble/scribble.dart';
-import 'package:scribble/src/view/painting/sketch_line_path_mixin.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/src/view/painting/sketch_line_path_mixin.dart';
 
 /// A painter for drawing a scribble sketch.
 class ScribblePainter extends CustomPainter with SketchLinePathMixin {

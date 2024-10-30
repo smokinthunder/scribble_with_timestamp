@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scribble/scribble.dart';
-import 'package:scribble/src/view/simplification/sketch_simplifier.dart';
+import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/src/view/simplification/sketch_simplifier.dart';
 
 void main() {
   setUp(() {});

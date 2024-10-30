@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scribble/src/domain/iterable_removed_x.dart';
+import 'package:scribble_with_timestamp/src/domain/iterable_removed_x.dart';
 
 void main() {
   setUp(() {});

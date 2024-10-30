@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:scribble/src/domain/model/sketch/sketch.dart';
-import 'package:scribble/src/view/painting/scribble_painter.dart';
+import 'package:scribble_with_timestamp/src/domain/model/sketch/sketch.dart';
+import 'package:scribble_with_timestamp/src/view/painting/scribble_painter.dart';
 
 /// {@template scribble_sketch}
 /// A widget for displaying a scribble sketch without any input functionalities.
