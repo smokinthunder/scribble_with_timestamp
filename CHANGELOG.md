@@ -1,3 +1,6 @@
+## 0.10.0+2
+ - **DOCS**: added time stamp feature.
+
 ## 0.10.0+1
 
  - **DOCS**: fixed demo image.
