@@ -6,6 +6,8 @@
 
 Scribble is a lightweight library for freehand drawing in Flutter supporting pressure, variable line width and more!
 
+By intoducing the time stamp feature we could find time each point was created and calculate time related datas like speed, accelaration and more!
+
 ![Scribble Demo](https://raw.githubusercontent.com/timcreatedit/scribble/main/scribble_demo.gif)
 
 ## Installation 💻
@@ -15,7 +17,7 @@ Scribble is a lightweight library for freehand drawing in Flutter supporting pre
 Install via `dart pub add`:
 
 ```sh
-dart pub add scribble
+dart pub add scribble_with_timestamp
 ```
 
 ---
@@ -32,6 +34,10 @@ dart pub add scribble
 * Full undo/redo support using [value_notifier_tools](https://pub.dev/packages/value_notifier_tools)
 * Sketches are fully serializable to JSON
 * Export Sketches to PNG
+
+## Additional Features
+
+* Timestamp Tracking : Retrieve the timestamp of all points drawn, included in the serialized JSON output.
 
 ## Usage
 
@@ -88,7 +94,7 @@ notifier.simplify();
 As mentioned above, the package is still under development, but we already use it in the app we are currently
 developing.
 
-Feel free to contribute, or open issues in our [GitHub repo](https://github.com/timcreatedit/scribble).
+Feel free to contribute, or open issues in our [GitHub repo](https://github.com/smokinthunder/scribble_with_timestamp).
 
 
 [dart_install_link]: https://dart.dev/get-dart
