@@ -6,7 +6,7 @@
 
 Scribble is a lightweight library for freehand drawing in Flutter supporting pressure, variable line width and more!
 
-By intoducing the time stamp feature we could find time each point was created and calculate time related datas like speed, accelaration and more!
+By intoducing the time stamp feature we could find time at which each point was created and calculate time related datas like speed, accelaration stalling time, and more!
 
 ![Scribble Demo](https://raw.githubusercontent.com/timcreatedit/scribble/main/scribble_demo.gif)
 
