@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/scribble_with_timestamp.dart';
 import 'package:scribble_with_timestamp/src/view/painting/scribble_editing_painter.dart';
 import 'package:scribble_with_timestamp/src/view/painting/scribble_painter.dart';
 

@@ -1,5 +1,5 @@
 import 'dart:math' as math;
-import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/scribble_with_timestamp.dart';
 import 'package:scribble_with_timestamp/src/domain/iterable_removed_x.dart';
 import 'package:simpli/simpli.dart';
 

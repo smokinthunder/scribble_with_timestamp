@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/scribble_with_timestamp.dart';
 import 'package:scribble_with_timestamp/src/view/painting/point_to_offset_x.dart';
 import 'package:scribble_with_timestamp/src/view/simplification/sketch_simplifier.dart';
 import 'package:value_notifier_tools/value_notifier_tools.dart';

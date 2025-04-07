@@ -1,5 +1,5 @@
 import 'package:flutter/rendering.dart';
-import 'package:scribble_with_timestamp/scribble.dart';
+import 'package:scribble_with_timestamp/scribble_with_timestamp.dart';
 import 'package:scribble_with_timestamp/src/view/painting/sketch_line_path_mixin.dart';
 
 /// A painter for drawing a scribble sketch.
